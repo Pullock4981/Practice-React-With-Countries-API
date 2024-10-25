@@ -4,4 +4,48 @@
   padding: 2rem;
 }
 
+.img{
+  max-height: 100px;
+  width: auto;
+}
 
+.card{
+  border: 2px solid purple;
+  border-radius: 15px;
+  margin: 15px;
+  padding: 15px;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  
+}
+
+@media screen and (max-width: 992px){
+
+  #root {
+    text-align: center;
+  }
+  
+  .container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    
+  }
+}
+
+@media screen and (max-width: 600px){
+  #root {
+    text-align: center;
+  }
+  .container{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+    
+  }
+
+}
